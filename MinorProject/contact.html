@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailoring & Stitching</title>
+    <link rel="shortcut icon" href="https://imgs.search.brave.com/qfdg0U3VzzBxFphFuUNdQcq3r_WYyMPm9iEkrBc8Tu0/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxOC8w/Ni8xNC8xMS81MC9i/dXR0b25zLTM0NzQ3/MTVfNjQwLmpwZw" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <link rel="stylesheet" href="stylesproject.css"> 
+</head>
+<body >
+    <div>
+        <ul class="b">
+            <li><a href="home.html"><img src="logo1.png" alt="logo"></a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="products.html">Designs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <h1 id="s">Contact Us For Customized Designs</h1>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"  placeholder="Name"><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"  placeholder="ex:  abc123@gmail.com"><br><br>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Hi Share ur Message"></textarea><br><br>
+      
+      <button type="submit">Submit</button>
+  
+    </form>
+    
+    <script>
+      document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        
+        const name = encodeURIComponent(document.getElementById("name").value);
+        const email = encodeURIComponent(document.getElementById("email").value);
+        const message = encodeURIComponent(document.getElementById("message").value);
+        
+        const whatsappLink = `https://api.whatsapp.com/send?phone=918712406122&text=Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+        
+        window.open(whatsappLink, "_blank");
+      });
+    </script>
+    
+    </body>
+    </html>
+    
+    
+   

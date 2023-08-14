@@ -1,0 +1,133 @@
+<!--DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailoring & Stitching</title>
+    <link rel="shortcut icon" href="https://imgs.search.brave.com/qfdg0U3VzzBxFphFuUNdQcq3r_WYyMPm9iEkrBc8Tu0/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxOC8w/Ni8xNC8xMS81MC9i/dXR0b25zLTM0NzQ3/MTVfNjQwLmpwZw" type="image/x-icon">
+   <link rel="stylesheet" href="stylesproject.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+   
+    
+<body>
+    <div>
+<ul class="b">
+    <li><a href="home.html"><img src="logo1.png" alt="logo"></a></li>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="products.html">Designs</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    <div class="dotted-line"></div>
+</ul>
+</div>
+
+<section class="image-gallery" aria-label="Image Gallery">
+  <div class="images">
+      <img src="i1.jpg" alt="Image 1">
+      <img src="i23.jpg" alt="Image 2">
+      <img src="i4.jpg" alt="Image 3">
+      <img src="i25.jpg" alt="Image 3">
+      <img src="i27.jpg" alt="Image 3">
+      <img src="i6.jpg" alt="Image 3">
+
+
+
+      <!-- Add more images here 
+  </div>
+  <button id="loadMoreBtn">Load More</button>
+</section>
+
+<script src="script.js">
+  // JavaScript for loading more images
+const loadMoreBtn = document.getElementById('loadMoreBtn');
+const images = document.querySelector('.images');
+const imagesToAdd = [
+    'i5.jpg',
+    'i24.jpg',
+    'i2.jpg',
+    'i21.jpg',
+    'i8.jpg',
+    'i21.jpg',
+    // Add more image URLs here
+];
+
+let currentImageIndex = 0;
+const imagesPerLoad = 3; // Number of images to load each time
+
+loadMoreBtn.addEventListener('click', () => {
+    for (let i = 0; i < imagesPerLoad && currentImageIndex < imagesToAdd.length; i++) {
+        const image = document.createElement('img');
+        image.src = imagesToAdd[currentImageIndex];
+        image.alt = `Image ${currentImageIndex + 4}`;
+        images.appendChild(image);
+        currentImageIndex++;
+    }
+
+    if (currentImageIndex >= imagesToAdd.length) {
+        loadMoreBtn.style.display = 'none';
+    }
+});
+
+</script>
+
+
+
+</body>
+</html -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailoring & Stitching</title>
+    <link rel="shortcut icon" href="https://imgs.search.brave.com/qfdg0U3VzzBxFphFuUNdQcq3r_WYyMPm9iEkrBc8Tu0/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxOC8w/Ni8xNC8xMS81MC9i/dXR0b25zLTM0NzQ3/MTVfNjQwLmpwZw" type="image/x-icon">
+    <link rel="stylesheet" href="stylesproject.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+</head>
+<body>
+    <div>
+        <ul class="b">
+            <li><a href="home.html"><img src="logo1.png" alt="logo"></a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="products.html">Designs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <div class="dotted-line"></div>
+        </ul>
+    </div>
+
+
+
+    <section class="image-gallery" aria-label="Image Gallery">
+      <div class="images">
+          <!-- Your initial images here -->
+          <img src="i1.jpg" alt="Image 1">
+          <img src="i2.jpg" alt="Image 2">
+          <img src="i4.jpg" alt="Image 3">
+          <img src="i3.jpg" alt="Image 4">
+          <img src="i5.jpg" alt="Image 5">
+          <img src="i6.jpg" alt="Image 6">
+          <img src="i7.jpg" alt="Image 7">
+          <img src="i8.jpg" alt="Image 8">
+          <img src="i9.jpg" alt="Image 9">
+          <img src="i10.jpg" alt="Image 10">
+      </div>
+      <button id="loadMoreBtn">Load More Designs</button>
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+
+
+
+a{
+    text-decoration: none;
+    margin-right: 150px;
+
+}
+
+
+#logo{
+    height: 70px;
+    margin-right: 130px;
+    margin-top: 130px;
+    margin-bottom: 130px;
+    margin-left: 130px;
+}
+
+li{
+list-style-type: none;
+display: inline;
+}
+
+
+    .b{
+       font-family: 'shadow-multiple';
+       font-size: 30px;
+       text-shadow: 4px 4px 4px #aaa;
+       position: static;
+    }
+#s{
+    font-family: 'Tangerine', serif;
+    text-align: center;
+    background-color: #ccc;
+    font-size: 40px;
+    text-shadow: 4px 4px 4px #aaa;  
+    
+}
+#contactForm{
+  text-align: center;
+  
+}
+
+
+
+
+hr {
+    border:lch(from color l c h); 
+    height: 2px; 
+    background-color: black; 
+    margin: 5px 0; 
+  }
+  #logo1{
+    height: 70px;
+  }
+
+  .dotted-line {
+    border-top: 8px dashed black; 
+    margin: 0; 
+    padding: 0;
+  }
+  
+body{
+    background-image: url('OIP.jpeg');
+    background-size: cover; 
+    background-repeat: repeat; 
+    background-attachment: fixed;
+}
+.image-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start; 
+  padding: 20px;
+}
+.image-block {
+  flex: 0 0 calc(33.33% - 20px); 
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: 'shadow-multiple';
+       font-size: 20px;
+       text-shadow: 4px 4px 4px #aaa;
+       font-style: oblique;
+}
+.image-block img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.center-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust to control vertical alignment */
+}
+
+#a{
+  font-family: Garamond;
+  font-size: 50px;
+  position: relative;
+  color: rgb(0, 89, 255);
+}
+#b{
+  font-style: initial;
+  font-family: Garamond;
+  font-style:italic;
+  background-color:rgb(19, 184, 184);
+  color: rgb(126, 19, 73);
+  font-size:  35px; 
+}
+
+
+.carousel slide{
+ width: 100px;
+}
+
+
+/*  designs Add your own styling as needed */
+.image-gallery {
+  text-align: center;
+  padding: 10px;
+ size: 90px;
+}
+
+.images {
+  display:grid;
+  grid-template-columns: repeat(5, 1fr); /* Display 3 images per row */
+  gap: 5px;
+}
+
+img {
+  max-width: 90%;
+  height: auto;
+}
+
+#loadMoreBtn {
+  margin-top: 10px;
+}
+
+
+
